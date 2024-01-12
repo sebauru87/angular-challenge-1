@@ -1,0 +1,18 @@
+<h3>Sign In</h3>
+<form [formGroup]="signInForm" (ngSubmit)="signIn()">
+    <label for="name">Username</label>
+    <input appInput type="text" id="username"  formControlName="username" required>
+  
+    <label for="password">Password</label>
+    <input
+    id="password"
+    appInput
+    type="password"
+    formControlName="password"
+    required
+  />
+  
+    <button type="submit">Sign In</button>
+  </form>
+  
+  <div>Don't have an account?<a routerLink="/sign-up">Sign Up</a></div>

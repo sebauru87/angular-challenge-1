@@ -1,0 +1,10 @@
+<header class="header">
+    <a routerLink="" class="home-logo">Home Logo</a>
+    <ul class="nav-bar">
+        <div *ngIf="!message" class="sign">
+        <li><a routerLink="sign-in" routerLinkActive="active" ariaCurrentWhenActive="page" class="" >Sign In</a></li>
+        <li><a routerLink="sign-up" routerLinkActive="active" ariaCurrentWhenActive="page">Sign Up</a></li>
+        </div>
+        <li *ngIf="message?.username"><a routerLink="profile" routerLinkActive="active" ariaCurrentWhenActive="page">Profile</a></li>
+    </ul>
+  </header>
