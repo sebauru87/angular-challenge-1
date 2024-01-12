@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    background: antiquewhite;
+}
+
+.home-logo {
+    align-self: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.sign {
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
